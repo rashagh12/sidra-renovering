@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/sid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap" rel="stylesheet">
+<script  src="js/scrept.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css  ">
+  <link rel="stylesheet" href="css/lightbox.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidra</title>
+    <style>
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Noto Sans', sans-serif;
+    background-color:#f4eff4;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 30px;
+    height: 10vh;
+}
+nav .fa-bars{
+    cursor: pointer;
+    display: none;
+}
+
+nav .nav_items{
+    display: flex;
+    list-style: none;
+   
+}
+nav .nav_items .nav_item{
+    padding: 0 2rem;
+}
+nav .nav_link{
+    text-decoration: none;
+    color: black;
+   
+
+}
+nav .nav_link:hover{
+    color: rgb(85, 48, 145);
+    text-shadow: -10px 10px 10px black;
+}
+/*---HERO SECTION   ---*/
+.hero{
+    background-color:#f4eff4;
+    width: 100%;
+}
+.hero_section{
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contant{
+    margin: 90px;
+
+}
+.hero_section .contant h2{
+    color: #5e1fb0;
+}
+
+.div_image{
+    border: #5e1fb0  inset 2px;
+    width: 700px;
+    height: 450px;
+    margin: 90px;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+.hero_section .contant h5{
+
+    color: rgb(113, 81, 130);
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+    }
+    .image img{
+        width: 100%;
+        height: 100%;
+    }
+ /*   animation: background infinite 20s;
+}
+  /*----- start change photo------*/
+
+ /* @keyframes background{
+    20% {background-image: url(.1234.JPEG);}
+    40% {background-image: url(.123.JPEG);}
+    60% {background-image: url(.images.JPEG);}
+    90% {background-image: url(.imagesS.JPEG);}
+  }
+ /*----- end change photo------*/
+.div_image{
+   border: #5e1fb0 inset 2px;
+   width: 700px;
+   height: 450px;
+   margin: 90px;
+   border-radius: 20px;
+
+}
+.image{
+
+    width: 100%;
+    height: 100%;
+    background-image: url("\Users\Rasha\Desktop\sidra\img\back1.JPEG");
+}
+section.features{
+    padding: 2rem  ;
+    background-color:#f4eff4;
+}
+section.features .features_section{
+    max-width: 1366px;
+    margin: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.features_section h3 {
+    color: #5e1fb0 ;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+}
+
+.features_section .qualities{
+    display: flex;
+    justify-content: space-between;
+}
+.features_section .qualities .quality{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 2rem;
+    max-width: 17rem;
+    border-radius: 1rem;
+    margin: 1rem;
+
+}
+.features_section .qualities .quality:hover{
+
+    border: 2px solid #5e1fb0 ;
+}
+.qualities .quality h4{
+
+    margin-bottom: 1rem;
+}
+.qualities .quality p{
+    color:  rgb(113, 81, 130);
+    text-align: center;
+}
+.the-work{
+    padding-top: 5rem;
+}
+#check{
+    display: none;
+}
+.the-work .photo-section{
+
+    margin:  0 auto;
+    padding:  0 3rem;
+    display: flex;
+    flex-direction: column;
+}
+.photo-section h3{
+    color: #5e1fb0 ;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+
+}
+.conten{
+    width: 100%;
+    
+}
+.gallary{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 40px;
+}  
+.gallary img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(0, 0,0,0.5);
+    transition: 0.3s ease;
+}
+
+.gallary img:hover{
+    transform: scale(1.1);
+}
+.about{
+    background-color:#f4eff4;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    
+}
+.about .about_us{
+   padding: 50px;
+   margin: 90px;
+}
+.about_us h3{
+    color: #5e1fb0;
+}
+.contact{
+    background-color:#f4eff4;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+.contact .con{
+  padding: 50px;
+   margin-top: 10px;
+   margin-left: 90px;
+   margin-bottom: 90px;
+   margin-right: 90px;
+}
+.con h3{
+    color: #5e1fb0;
+}
+.footer{
+    background-color:#f4eff4;
+    
+}
+.footer .footr{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.footer{
+    font-size: 1rem;
+}
+.footr .foot{
+    margin: 90px;
+    padding-bottom: 2rem;
+}
+.footr .foot h3{
+    margin-bottom: 2rem;
+    color: #5e1fb0;
+}
+/*----Resposive Design  */
+@media( max-width:1300px){
+    *{
+      font-size: 110%;
+
+    }
+}
+@media( max-width:1170px){
+    *{
+      font-size: 102%;
+
+    }
+    .hero_section{
+        height: 80vh;
+    }
+}
+
+@media( max-width:1000px){
+    *{
+      text-align: center;
+
+    }
+    .features_section .qualities{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .hero_section{
+        height: 80vh;
+    }
+}
+@media( max-width:872px){
+    .hero_section{
+        height: 80vh;
+    }
+    *{
+      font-size: 100%;
+
+    }
+    .footr .foot{
+        margin: 60px;
+        padding-bottom: 1.6rem;}
+        .div_image{
+            border: #5e1fb0  inset 2px;
+            width: 600px;
+            height: 350px;
+            margin: 50px;
+            border-radius: 20px;
+            overflow: hidden;
+        
+        }
+        .image{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+    }
+}
+@media( max-width:770px){
+    *{
+      font-size: 100%;
+      text-align: center;
+    }
+
+ 
+}
+@media( max-width:740px){
+    *{
+      font-size: 100%;
+      text-align: center;
+    }
+    .div_image{
+        display: none;
+    }
+    .div_image .image{
+        display: none;
+    }
+    .conten{
+        width: 100%;
+        
+    }
+    .gallary{
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        gap: 40px;
+    }  
+    .gallary img{
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgb(0, 0,0,0.5);
+        transition: 0.3s ease;
+    }
+    
+    .gallary img:hover{
+        transform: scale(1.1);
+    }
+}
+@media( max-width:700px){
+    *{
+      font-size: 100%;
+
+    }
+    .footr .foot{
+        margin: 40px;
+        padding-bottom: 1.6rem;}
+    }
+ @media( max-width:600px){
+ *{
+  font-size: 95%;
+        
+ }
+ .footr .foot{
+  margin: 30px;
+  padding-bottom: 1.6rem;}
+  nav .fa-bars{
+    display: block;
+    font-size: 2rem;
+  } 
+  nav{
+    height: 1vh;
+  }
+
+  nav  .logo img{
+    width: 100px;
+    height: 50px;
+
+  }
+  /* nav .nav_items{
+    position: fixed;
+    right: 0;
+    top: 0;
+    flex-direction: column;
+    width: 200px;
+    height: 100vh;
+    text-align: center;
+    background-color: #8f6bbe;
+    transition: all 0.5s;
+
+  }
+ /*ul{
+    position: fixed;
+    right: 0;
+    top: 0;
+    flex-direction: column;
+    width: 200px;
+    height: 100vh;
+    text-align: center;
+    background-color: #8f6bbe;
+    transition: all 0.5s;
+ }*/
+nav ul li{display:none ;
+   
+
+}
+
+ /* #check:checked ~ ul {
+    left: 0;
+  }*/
+
+ 
+
+ 
+        
+  .hero_section {
+    padding-left: 10px;
+    margin: 10px;
+    height: 60vh;
+  }
+  .features_section{
+    height: 70vh;
+  }
+}
+@media( max-width:565px){
+    *{
+     font-size: 85%;
+       text-align: left;    
+    }} @media( max-width:470px){
+        .gallary img{
+            height: 400px;
+            width: 400px;
+        }
+    }
+
+    @media( max-width:380px){
+        *{
+         font-size: 82%;
+               
+        }.about .about_us{
+        margin-left: 15px;
+        margin-right: 15px;
+        padding-left: 15px;
+padding-right: 15px;
+    }
+    .hero .hero_section .contant{
+
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    }
+    .contact .con{
+        margin-left: 15px;
+        margin-right: 15px;
+        padding-left: 15px;
+padding-right: 15px;
+    }
+
+    
+        .footr .foot{
+  margin: 20px;
+  padding-bottom: 1.6rem;}
+    .quality{
+        height: 50px;
+        width: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ffffff;
+
+        border-radius: 1rem;
+      margin: auto;
+    }
+    .gallary img{
+height: 2500px;
+width: 250px;
+
+    }
+    .hero .hero_section .contant{
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .quality img{height: 20px;
+    width: 20px;}
+    }
+    @media( max-width:335px){
+        *{
+         font-size: 82%;
+               
+        }
+        .gallary img{
+height: 100px;
+width: 100px;
+
+    }.about .about_us{
+        margin-left: 6px;
+        margin-right: 6px;
+        padding-left: 6px;
+padding-right: 6px;
+    }
+    .contact .con{
+        margin-left: 6px;
+        margin-right: 6px;
+        padding-left: 6px;
+padding-right: 6px;}
+    .footr .foot{
+  margin: 15px;
+  padding-bottom: 1.6rem;}}
+  @media( max-width:335px){
+        *{
+         font-size: 89%;
+               
+        }
+        .gallary img{
+height: 80px;
+width: 80px;
+
+    }.about .about_us{
+        margin-left: 6px;
+        margin-right: 6px;
+        padding-left: 6px;
+padding-right: 6px;
+    }
+    .contact .con{
+        margin-left: 6px;
+        margin-right: 6px;
+        padding-left: 6px;
+padding-right: 6px;}
+    .footr .foot{
+  margin: 15px;
+  padding-bottom: 1.6rem;}
+.hero .hero_section .contant{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+}
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+        <img src="./img/lgo.png"  width ="150px" height="90px" alt=""></div>
+    <ul class="nav_items">
+        
+        <li class="nav_item">
+            <a href="#hr" class="nav_link">HOME</a>
+        </li>
+        <li class="nav_item">
+            <a href="#ar" class="nav_link">Our work</a>
+        </li>
+        <li class="nav_item">
+            <a href="#about1" class="nav_link">About</a>
+        </li>
+        <li class="nav_item">
+            <a href="#as" class="nav_link">Contact with us</a>
+        </li>
+</ul> 
+<i class="fas fa-bars"></i></label>
+</nav>
+<!--HERO SECTION-->
+
+
+
+<section class="hero" id="hr">
+    <div class="hero_section">
+     <div class="contant">
+     <h2 >Renovering with us </h2>
+     <h4>WE can completely renovate your home , livingrooms ,bedrooms and kitchen</h4>
+     <h5><b>Don't worry we can fix everything</b></h5>
+     </div>
+    <div class="div_image">
+    <div class="image">
+<img src="./img/123.JPEG" alt="">
+    </div>
+</section>
+<!---- features ------>
+<section class="features">
+    <div class="features_section">
+        <h3>why choose us </h3>
+    <div class="qualities">
+     <div class="quality">
+        <img src="./img/per.png" height="30px" width="30px" alt="">
+    <h4>Experienced staff</h4>
+    <p>They are trained professionals</p>
+     </div>
+     <div class="quality">
+       <img src="./img/right.png" height="30px" width="30px" alt="">
+    <h4>High quality</h4>
+    <p>Every thing we use is of the finest materials</p>
+     </div>
+     <div class="quality">
+      <img src="./img/alarm.png"  height="30px" width="30pc" alt="">
+    <h4>On time </h4>
+    <p>We have the fastest worker</p>
+     </div></div>
+    </div>
+<!---work--->
+<section class="the-work" >
+ <div class="photo-section">
+<h3> Our work </h3>
+
+</section> 
+<div class="conten" id="ar">
+    <div class="gallary">
+        <a href="./img/pic1.JPEG" data-lightbox="my-gallary" data-title="Pic Number 1">
+        <img src="./img/pic1.JPEG"  height="500px" width="500px" alt="">    
+        </a>
+        <a href="./img/pic2.JPEG" data-lightbox="my-gallary" data-title="Pic Number 2">
+            <img src="./img/pic2.JPEG"  height="500px" width="500px"  alt="">    
+         </a>
+         <a href="./img/picc8.JPEG" data-lightbox="my-gallary" data-title="Pic Number 7">
+            <img src="./img/picc8.JPEG"    height="500px" width="500px"  alt="">    
+       </a>
+         <a href="./img/pic3.JPEG" data-lightbox="my-gallary" data-title="Pic Number 3">
+            <img src="./img/pic3.JPEG"  height="500px" width="500px"  alt="">    
+         </a> 
+         <a href="./img/picc5.jpg" data-lightbox="my-gallary" data-title="Pic Number 4">
+                <img src="./img/picc5.jpg"   height="500px" width="500px"  alt="">    
+         </a>
+        <a href="./img/back1.JPEG" data-lightbox="my-gallary" data-title="Pic Number 5">
+                    <img src="./img/back1.JPEG"   height="500px" width="500px"   alt="">    
+         </a>
+         <a href="./img/189.JPEG" data-lightbox="my-gallary" data-title="Pic Number 6">
+            <img src="./img/189.JPEG"   height="500px" width="500px"  alt="">    
+        </a>
+       
+         <a href="./img/7.JPEG" data-lightbox="my-gallary" data-title="Pic Number 8">
+             <img src="./img/7.JPEG"  height="500px" width="500px"  alt="">    
+        </a>       
+    </div>
+</div>
+ </section>
+ <section>
+    <div class="about" id="about1">
+        <div class="about_us">
+        <h3>Every thing about us</h3>
+        <p>välkommen till vår hemsida!
+            Vi jobbar som, målarei, renovering över hela huset,<br> altaninstallation. 
+            Du som kund kan kontakta oss här eller på detta nummer:0793547719</p>
+        </div></div>
+ </section>
+<section>
+    <div class="contact" id="as">
+        <div class="con">
+            <h3>Contact with us </h3>
+            <p>Kontata oss via detta e-post :<b> sidra.gbg@gmail.com </b></p>
+        </div>
+    </div>
+</section>
+<section>
+<div class="footer">
+  <div class="footr">
+<div class="foot">
+    <h3>about</h3>
+    <hr color="#5e1fb0" width="100%">
+    <p>välkommen till vår hemsida!<br>
+        Vi jobbar som, målarei, renovering <br>över hela huset, altaninstallation. </p>
+</div>
+<div class="foot">
+    <h3>call</h3>
+    <hr color="#5e1fb0" width="100%">
+    <p> 0793547719<br>sidra.ghg@gmail.com</p>
+</div>
+<div class="foot">
+    <h3>Adrees</h3>
+    <hr color="#5e1fb0" width="100%">
+    <p>Göteborg,Sverige</p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</div>
+
+
+</section>
+<script  src="js/scrept.js"></script>
+<script src="js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>
